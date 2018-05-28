@@ -1,0 +1,130 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 30px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: skyblue;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+table {
+    margin: 10px;
+}
+
+img {
+    height: 200px;
+    width: 175px;
+}
+
+label {
+    text-align: left;
+}
+
+textarea {
+    text-align: left;
+}
+
+.navbar-brand {
+    float: left;
+    background: skyblue;
+    height: 40px;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    margin : 0px 90px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    height: 20px;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    border-bottom: 1px solid gray;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.nav-item {
+    float: right;
+    margin-right: 20px;
+    padding-right: 30px;
+    color: gray;
+}
+
+.row {
+    margin: 10px 5px;
+}
+
+.footer {
+    margin: auto;
+    height: 20px;
+    width: 100%;
+    background: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 65px;
+    border-top: 5px solid skyblue;
+}
+
+.portfolio-para {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: skyblue;
+    color: white;
+    height: 30px;
+    width: 200px;
+    padding-top: 5px;
+}
+
+#profile-img {
+    float: left;
+    margin-right: 10px;
+}
+
+#profile-para {
+    float: right;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#row-2 {
+    clear: both;
+}
+
+#container {
+    margin-top: 10px;
+    margin: 30px 0px 0px 120px;
+    padding-right: 0px;
+    clear: both;
+    background: white;
+}
+
+#contact-form {
+    text-align: left;
+}
