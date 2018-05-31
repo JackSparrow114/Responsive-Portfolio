@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -40,23 +45,27 @@ textarea {
 }
 
 .navbar-brand {
+    position: absolute;
     float: left;
     background: skyblue;
     height: 40px;
-    width: 180px;
-    padding: 10px;
+    width: 200px;
+    padding: 1em;
+    padding-bottom: 3em;
     text-align: center;
     margin : 0px 90px;
     font-weight: bold;
     font-size: 25px;
     color: white;
+    top: 0;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 .navbar {
-    height: 20px;
+    position: relative;
+    height: 40px;
     width: 100%;
-    padding: 30px;
+    padding: 3em;
     background: white;
     border-bottom: 1px solid gray;
 }
@@ -72,8 +81,33 @@ textarea {
     color: gray;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0.2em;
+    height: 5%;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col {width: 100%;}
+
 .row {
-    margin: 10px 5px;
+    margin: 5px 2px;
+    padding: 0.1em;
 }
 
 .footer {
@@ -85,7 +119,7 @@ textarea {
     padding: 20px;
     text-align: center;
     margin-bottom: 0px;
-    margin-top: 65px;
+    margin-top: 125px;
     border-top: 5px solid skyblue;
 }
 
@@ -98,10 +132,11 @@ textarea {
     color: white;
     height: 30px;
     width: 200px;
+    padding: 2em;
     padding-top: 5px;
 }
 
-#profile-img {
+#profile-photo {
     float: left;
     margin-right: 10px;
 }
@@ -110,7 +145,7 @@ textarea {
     float: right;
     margin-left: 20px;
     margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 2em;
 }
 
 #row-2 {
@@ -118,13 +153,78 @@ textarea {
 }
 
 #container {
-    margin-top: 10px;
     margin: 30px 0px 0px 120px;
     padding-right: 0px;
     clear: both;
     background: white;
+    padding: 0.2em;
+    height: 500px;
+    width : 70%;
 }
 
 #contact-form {
     text-align: left;
+}
+
+@media screen and (max-width: 640px) {
+    * {
+        display: block;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        height: inherit;
+        margin: 0;
+    }
+    
+    [class*="col-"] {
+      width: 80%;
+    }
+
+    td {
+        width: 70%;
+        padding: 0em;
+    }
+
+    .footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar-brand {
+        padding: 0.2em;
+    }
+
+    .row {
+        padding: 0.5em;
+    }
+  
+    [class*="col-"] {
+      width: 40%;
+    }
+
+    img {
+        height: 90%;
+        width: 90%;
+    }
+
+    #profile-photo {
+        float: left;
+    }
+
+    #profile-para {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+
 }
